@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 92, 197, 0.635), rgba(0, 172, 157, 0.3));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-box {
+  
+  padding: 30px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mail {
+  margin: 20px 0;
+}
+.mail input {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.password {
+  margin: 20px 0;
+}
+.password input {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.buttons {
+  margin: 20px 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons button {
+  width: 45%;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 0.8rem;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.buttons button::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(175, 242, 254);
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.buttons button:hover::after {
+  width: 100%;
+}
+.forget-password p {
+  font-size: 1.2rem;
+}
+.forget-password p a {
+  text-decoration: underline;
+  color: #000;
+}
+h1 {
+  position: relative;
+}
+h1::after {
+  content: " ";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  top: 40px;
+  left: 0;
+}
+.name{
+  max-height: 60px;
+}
+.name-hidden {
+  max-height: 0px;
+  display: none;
+} 
+.glass{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 50px;
+}
